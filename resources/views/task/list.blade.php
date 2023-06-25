@@ -9,6 +9,9 @@
             @if (session('front.task_register_success') == true)
                 タスクを登録しました！！<br>
             @endif
+            @if (session('front.task_delete_success') == true)
+                タスクを削除しました！！<br>
+            @endif
             @if ($errors->any())
                 <div>
                 @foreach ($errors->all() as $error)
